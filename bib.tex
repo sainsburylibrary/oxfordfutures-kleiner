@@ -1,0 +1,98 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex,
+%style=numeric,
+style=alphabetic,
+bibencoding=ascii,
+sorting=none
+]{biblatex}
+\addbibresource{box1,box2,box3,box4,box5,box6,pwsitem}
+% Print abstracts
+\DeclareFieldFormat{abstract}{\par\small#1}
+\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+% Print full names of citation-keys
+\DeclareFieldFormat{labelalpha}{\thefield{entrykey}}
+\DeclareFieldFormat{extraalpha}{}
+
+\title{The Art Kleiner Archive:\\A Descriptive Catalogue}
+\author{Compiled by Jamie Stokes\\Edited by Alan McKechnie}
+
+
+\begin{document}
+
+
+\maketitle
+
+\newpage
+\section*{The Art Kleiner Archive:\\A Descriptive Catalogue}
+The Art Kleiner Archive Catalogue describes the contents of a collection of letters, reports and other documents which was donated by renowned author, journalist, and editorial consultant Art Kleiner, to Green Templeton College, and deposited in the Oxford Futures Library at Egrove Park, University of Oxford.\\
+\\
+The collection consists of original publications and correspondence between prominent scenario planners as well as annotated drafts of Kleiner’s work, amassed by Kleiner in the writing of \textit{The Age of Heretics} (Doubleday/Nicholas Brealey, 1996), and \textit{The Fifth Discipline Fieldbook} (Doubleday/Nicholas Brealey, 1994) which Kleiner developed with Peter Senge and others. Many of the items within this collection directly reference Pierre Wack, Shell and scenario planning, and as such, provide a valuable complement to the Boucher Futures Research Library and Pierre Wack Memorial Library.\\
+\\
+Kleiner’s other distinguished publications include \textit{Who Really Matters: The Core Group Theory of Power, Privilege, and Success} (Doubleday/Nicholas Brealey, 2003), \textit{The Dance of Change} (Doubleday, 1999) and \textit{Schools that Learn} (Doubleday, 2000). Since 2005 Kleiner served as the Editor-in-Chief of \textit{strategy+business} magazine, to which he also contributes regular columns.\\
+\\
+Green Templeton College and the Saïd Business School are grateful for the generous donation of this distinct archive.
+ 
+\nocite{*}
+
+\newpage
+
+\tableofcontents
+
+
+\newpage
+
+\medskip
+\addcontentsline{toc}{section}{Box 1:1 - 1:5}
+\printbibliography[keyword={box1},title={Box 1:1 - 1:5}]
+\newpage
+
+\addcontentsline{toc}{section}{Box 2:1 - 2:5}
+\printbibliography[keyword={box2},title={Box 2:1 - 2:5}]
+\newpage
+
+\addcontentsline{toc}{section}{Box 3:1 - 3:5}
+\printbibliography[keyword={box3},title={Box 3:1 - 3:5}]
+\newpage
+
+\addcontentsline{toc}{section}{Box 4:1 - 4:5}
+\printbibliography[keyword={box4},title={Box 4:1 - 4:5}]
+\newpage
+
+\addcontentsline{toc}{section}{Box 5:1 - 5:5}
+\printbibliography[keyword={box5},title={Box 5:1 - 5:5}]
+\newpage
+
+\addcontentsline{toc}{section}{Box 6:1 - 6:4}
+\printbibliography[keyword={box6},title={Box 6:1 - 6:4}]
+\newpage
+
+
+\addcontentsline{toc}{section}{Appendix A: Items that refer to Pierre Wack or Shell}
+\printbibliography[keyword={pwsitem},title={Appendix A:\\Items that refer to Pierre Wack or Shell}]
+%\printbibliography[sorting=none, heading=subbibliography, keyword={pwsitem}, title={Items that refer to Pierre Wack or Shell}]
+%\section*{Items that refer to Pierre Wack or Shell}
+\end{document}
+
+%\documentclass[a4paper,10pt]{article}
+%\usepackage[utf8]{inputenc}
+%
+%\title{Art Kleiner Catalogue}
+%\author{Jamie Stokes, Alan McKechnie}
+%
+%\begin{document}
+%
+%\maketitle
+%This document is the catalogue of the Art Kleiner collection.
+%\medskip
+%\renewcommand{\refname}{}
+%
+%%\section*{Catalogue}
+%\bibliographystyle{abstract}
+%\bibliography{box1,box2,box3,box4,box5,box6}
+%%\nocite{*}
+%\cite{*}
+%
+%\section*{Items that refer to PW or Shell}
+%
+%\end{document}
